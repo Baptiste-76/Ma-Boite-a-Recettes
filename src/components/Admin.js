@@ -36,7 +36,7 @@ class Admin extends Component {
     }
 
     authenticate = () => {
-        const authProvider = new firebase.auth.FacebookAuthProvider
+        const authProvider = new firebase.auth.FacebookAuthProvider()
 
         firebaseApp.auth()
             .signInWithPopup(authProvider)
